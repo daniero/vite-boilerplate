@@ -33,6 +33,15 @@ export default tseslint.config(
       },
     },
     rules: {
+      'no-param-reassign': ['error', { props: true }],
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/strict-boolean-expressions': [
+        'error',
+        {
+          allowString: false,
+          allowNumber: false,
+        },
+      ],
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
