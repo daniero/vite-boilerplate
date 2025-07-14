@@ -26,7 +26,10 @@ export default defineConfig([
         tsconfigRootDir: import.meta.dirname,
       },
       ecmaVersion: 2020,
-      globals: globals.browser
+      globals: globals.browser,
+    },
+    rules: {
+      '@typescript-eslint/no-non-null-assertion': 'off',
     }
   }
 ]);
