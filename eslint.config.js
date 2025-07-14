@@ -30,6 +30,14 @@ export default tseslint.config([
     },
     rules: {
       '@typescript-eslint/no-non-null-assertion': 'off',
+      'no-param-reassign': ['error', { props: true }],
+      '@typescript-eslint/strict-boolean-expressions': [
+        'error',
+        {
+          allowString: false,
+          allowNumber: false,
+        },
+      ],
     }
   },
 ])
